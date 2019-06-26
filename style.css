@@ -77,9 +77,9 @@ i{
 }
 /*--------------// Positionnement //--------------*/
 body{
-  width: 980px;
   margin: auto;
   display:grid;
+  margin: 0;
   grid-template-columns:3fr 2fr;
   grid-template-areas:
   "header photo"
@@ -98,6 +98,9 @@ img{grid-area:photo;}
 footer{grid-area:footer;}
 
 /*--------------// HEADER //--------------*/
+header{
+  margin-left: 20px;
+}
 header>p{
   font-size:2rem;
   font-weight:600;
@@ -110,8 +113,20 @@ img{
     border-radius: 50%;
 }
 /*--------------// MAIN //--------------*/
+/* Center the main component */
+main{
+  margin-right: 20px;
+  margin-left: 20px;
+}
 /*--------------// ASIDE //--------------*/
+aside{
+  margin-right: 20px;
+}
 /*--------// situation //---------*/
+#situation {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 #situation p{
   color:var(--primary-color);
 }
@@ -166,7 +181,7 @@ footer {
   align-items:baseline;
   background-color:var(--primary-color);
   height: 7vh;
-  padding:0.5rem;
+  box-sizing: border-box;
 }
 footer span{
   font-family:"Montserrat";
