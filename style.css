@@ -17,7 +17,7 @@
 }
 /*--------------// BALISE //--------------*/
 h1,h2,h4{
-  font-family:"Fira Sans";
+  font-family:"Archivo black";
   text-transform:uppercase;
   color:var(--primary-color);
 }
@@ -33,9 +33,8 @@ h2{
 }
 h3{
   font-size:1.6rem;
-  font-family:"Fira Sans";
+  font-family:"Archivo black";
   font-weight:500;
-  first-letter:uppercase;
   color:var(--secondary-color);
 }
 p{
@@ -80,12 +79,12 @@ body{
   width: 980px;
   margin: auto;
   display:grid;
-  grid-template-columns:3fr 2fr;
+  grid-template-columns:2fr 3fr;
   grid-template-areas:
-  "header photo"
-  "situation situation"
-  "main aside"
-  "footer footer  "
+  "header header"
+  "aside main"
+  "aside main"
+  " footer footer"
   ;
   grid-column-gap:30px;
   grid-row-gap:15px;
