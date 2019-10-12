@@ -3,15 +3,6 @@
 :root{--secondary-color:#8C6930;}
 :root{--third-color:#939393;}
 /*--------------// CLASS //-------------*/
-.style-border{
-              border-bottom-style: dotted;
-              color:var(--third-color);
-}
-.skill{
-  display:inline-flex;
-  padding:0.2rem;
-  border:1px solid var(--primary-color);
-}
 .skill:hover{
   transform: translateY(-5px);
 }
@@ -22,7 +13,7 @@ h1,h2,h4{
   color:var(--primary-color);
 }
 h1{
-  font-size:2rem;
+  font-size:3.5rem;
   font-weight:700;
 }
 h2{
@@ -32,7 +23,7 @@ h2{
   width: 100%;
 }
 h3{
-  font-size:1.6rem;
+  font-size:1.4rem;
   font-family:"Archivo black";
   font-weight:500;
   color:var(--secondary-color);
@@ -44,13 +35,11 @@ p{
   color:var(--primary-color);
 }
 ul{
-  font-size:1.3rem;
+  margin-left: -2em;
+  font-size:1.2rem;
   font-family:"Montserrat";
   list-style-type:none;
   color:var(--primary-color);
-}
-ul li{
-  margin-bottom: 0.5rem;
 }
 a{
   font-size:1.3rem;
@@ -79,14 +68,14 @@ body{
   width: 980px;
   margin: auto;
   display:grid;
-  grid-template-columns:2fr 3fr;
+  grid-template-columns:40% 60%;
   grid-template-areas:
-  "header header"
+  "header photo"
   "aside main"
   "aside main"
   " footer footer"
   ;
-  grid-column-gap:30px;
+  grid-column-gap:50px;
   grid-row-gap:15px;
 }
 header{grid-area:header;}
@@ -97,8 +86,11 @@ img{grid-area:photo;}
 footer{grid-area:footer;}
 
 /*--------------// HEADER //--------------*/
+header{
+  margin-bottom:5em;
+}
 header>p{
-  font-size:2rem;
+  font-size:1.6rem;
   font-weight:600;
   color:var(--secondary-color);
 }
@@ -109,6 +101,12 @@ img{
     border-radius: 50%;
 }
 /*--------------// MAIN //--------------*/
+.skills_develop{
+  margin-left:15px;
+}
+ul .skills_develop{
+  font-size:0.8em;
+}
 /*--------------// ASIDE //--------------*/
 /*--------// situation //---------*/
 #situation p{
@@ -119,7 +117,12 @@ img{
   color:var(--secondary-color);
 }
 /*--------// compétences //---------*/
-
+#code  ul li {
+  font-size: 1em;
+  list-style-type: disc;
+  color:var(--primary-color);
+  margin-left: 1em;
+}
 /*--------// langue //---------*/
 #langue {
   color:var(--primary-color);
