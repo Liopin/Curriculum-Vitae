@@ -12,7 +12,7 @@
     <!---En tête-->
 <header itemscope itemtype="http://schema.org/Person">
   <h1 itemprop="name" content="Lionel Pinheiro"><span itemprop="givenName">Lionel </span></br> </span><span itemprop="familyName">Pinheiro</span></h1>
-  <p itemprop="jobTitle">Developpeur Web</p>
+  <p itemprop="jobTitle">Developpeur Front end</p>
  </header>
  <!--- Photo de profil-->
  <!--<img alt="photo de profil" src="https://placekitten.com/150/150"/>-->
@@ -20,31 +20,24 @@
    
   <!---Formations-->
 <main>
-  <h2>expérience</h2>
+  <h2>expériences</h2>
+    <div>
+      <h3>Stage Développeur Web</h3>
+      <p>ProtectAI</p>
+      <p><i class="far fa-calendar-alt" ></i> décembre 2019 - Janvier 2020</p>
+      <p>Développement du site vitrine de l'entreprise en WordPress</p>
+      <p>Etude de la faisabilité pour porter un réseau de neurones de détection d'objet sur navigateur</p>
+    </div>
     <div>
       <h3>Intérimaire Opérateur Système </h3>
       <p>Entreprise Schütz</p>
       <p><i class="far fa-calendar-alt" ></i> juin 2014 - décembre 2017</p>
+      <p>Travail sur chaîne de production</p>
     </div>
   </section>
   <!---Projets-->
   <section id="projets" itemscope itempype="http://schema.org/CreativeWork">
     <h2>projets</h2>
-    <div itemprop="educationalUse">
-        <h3>Portfolio</h3>
-        <p itemprop="about">Projet visant à faire la promotion de ma personne et de mes projets lors de ma formation de développeur Web.</p>
-        <p>Compétences développées</p>
-        <ul>
-          <li class="skills_develop">-Mise en place d'une base de donnée MySQL</li>
-          <li class="skills_develop">-Mise en place d'un framework</li>
-          <li class="skills_develop">-Déploiement  via les amazones web services</li>
-        </ul>
-        <p>Technologie : HTML/CSS,Python (Framework DJANGO) </p>
-        <ul class="lien">
-          <li><i class="fas fa-link" ></i><a href="www.lionelpinheiro.com" target="_blanck" title="lien vers mon portfolio" >Portfolio</a></li>
-          <li><i class="fas fa-link"></i><a href="https://github.com/Liopin/Portfolio" target="_blanck" title="lien vers le github du projet" >Github</a></li>
-        </ul>
-      </div>
     <div itemprop="educationalUse">
         <h3>Curriculum Vitae</h3>
         <p itemprop="about">Intégration de la maquette de ce CV.</p>
@@ -59,27 +52,21 @@
           <li><i class="fas fa-link"></i><a href="https://github.com/Liopin/Curriculum-Vitae"  target="_blanck"title="lien vers le github du projet" >Github</a></li>
         </ul>
       </div>
-</section>
+  </section>
   <section id="formation">
     <h2>formations</h2>
     <div itemscope itemtype="http://schema.org/Organization">
-      <h3>Développeur Web</h3>
-      <a href="https://simplon.co/" title="lien vers le site de la formation" itemprop="legalName">CRP Beauvoir - Certifié Grande Ecole du Numérique </a>
-      <p><i class="far fa-calendar-alt" ></i>mairs 2019 - mars 2019</p>
+      <h3>Développeur Web / Mobile</h3>
+      <a href="https://simplon.co/" title="lien vers le site de la formation" itemprop="legalName">Simplon.co - Certifié Grande Ecole du Numérique </a>
+      <p><i class="far fa-calendar-alt" ></i>mars 2019 - mars 2020</p>
     </div>
       <div itemscope itemtype="http://schema.org/Organization">
         <h3>Intégrateur WordPress</h3>
         <a href="https://simplon.co/" title="lien vers le site de la formation" itemprop="legalName">Simplon.co</a>
         <p><i class="far fa-calendar-alt" ></i>juin 2018 - juillet 2018</p>
       </div>
-      <div itemscope itemtype="http://schema.org/Organization">
-        <h3>Maîtrise de la qualité en projet web</h3>
-        <p>Score 820 niveau Avancé</p>
-        <a href="https://www.opquast.com/" title="lien vers le site de la formation" itemprop="legalName">Opquast</a>
-        <p><i class="far fa-calendar-alt" ></i>mai 2018 - juin 2018</p>
-      </div>
   </section>
-     <!---Expérience-->
+  <!---Expérience-->
 </main>
 <!---Barre lateral-->
 <aside >
@@ -92,25 +79,40 @@
     <h2>compétences</h2>
     <ul>
         <h4>front end</h4>
-        <li>HTML normes W3C</li>
+        <li>HTML5 normes W3C</li>
         <li>CSS3</li>
         <li>SASS</li>
         <li>Accessibilité</li>
-        <li>Bootstrap</li>
         <li>Javscript</li>
+        <li>React</li>
+        <li>Graphql</li>
       </ul>
       <ul>
-          <h4>back end</h4>
-          <li>Connaissances: PHP, Python</li>
-          <li>Framework: Django</li>
-          <li>Base de données : Mysql</li>
+          <h4>Cloud</h4>
+          <li>AWS Amplify</li>
+          <li>AWS EC2</li>
+          <li>AWS S3</li>
         </ul>
-        <ul>
-            <h4>environnement</h4>
-            <li>IDE : pycharm</li>
-            <li>Versionning : Git,Github, Gitlab</li>
-            <li>CMS : WordPress</li>
-          </ul>
+      <ul>
+          <h4>environnement</h4>
+          <li>Ubuntu</li>
+          <li>Versionning : Git,Github, Gitlab</li>
+          <li>CMS : WordPress</li>
+      </ul>
+  </div>
+  <div id="certification"> 
+    <h2>certifications</h2>
+    <ul>
+      <li itemscope itemtype="http://schema.org/Organization">
+        <h3>Maîtrise de la qualité en projet web</h3>
+        <p>Score 820 niveau Avancé</p>
+        <a href="https://directory.opquast.com/fr/certificat/MEC4XN/" title="lien vers le site de la formation" itemprop="legalName" target="_blanck">Opquast</a>
+      </li>
+      <li itemscope itemtype="http://schema.org/Organization">
+        <h3>AWS Cloud Practitioner</h3>
+        <a href="https://www.youracclaim.com/badges/de73a254-efbc-4c9a-82ca-97b4ec14d6da?source=linked_in_profile" title="lien vers le site de la formation" itemprop="legalName" target="_blanck">Amazon Web Services</a>
+      </li>
+    </ul>
   </div>
   <section id="social" >
     <h2>contactez moi</h2>
@@ -120,7 +122,7 @@
     <ul>
      <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/lionel-pinheiro/" target="_blanck">Linkedin</a></li>
      <li><i class="fab fa-github"></i><a href="https://github.com/Liopin" target="_blanck"></i>Github</a></li>
-     <li><i class="fab fa-twitter"></i><a href="https://twitter.com/Lionelpinheiro_" target="_blanck" ></i>Twitter</a></li>
+     <!-- <li><i class="fab fa-twitter"></i><a href="https://twitter.com/Lionelpinheiro_" target="_blanck" ></i>Twitter</a></li> -->
     </ul>
   </section>
   </section>
