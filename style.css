@@ -1,180 +1,223 @@
 /*--------------// COLOR  //-------------*/
-:root{--primary-color:#22313F;}
-:root{--secondary-color:#8C6930;}
-:root{--third-color:#939393;}
-
+:root {
+  --primary-color: #22313f;
+}
+:root {
+  --secondary-color: #8c6930;
+}
+:root {
+  --third-color: #939393;
+}
+:root {
+  --Font-Family: "Roboto";
+}
 /*--------------// CLASS //-------------*/
-.skill:hover{
+.skill:hover {
   transform: translateY(-5px);
 }
-  /*--------------// BALISE //--------------*/
-  h1,h2,h4{
-    font-family:"Archivo black";
-    text-transform:uppercase;
-    color:var(--primary-color);
-  }
-  h1{
-    font-size:3.5rem;
-    font-weight:700;
-  }
-  h2{
-    font-size:1.8rem;
-    font-weight:600;
-    border-bottom: 0.2rem solid var(--primary-color);
-    width: 100%;
-  }
-  h3{
-    font-size:1.4rem;
-    font-family:"Archivo black";
-    font-weight:500;
-    color:var(--secondary-color);
-  }
-  p{
-    font-family:"Montserrat";
-    font-weight:400;
-    line-height:1.5rem;
-    color:var(--primary-color);
-  }
-ul{
+/*--------------// BALISE //--------------*/
+h1,
+h2 {
+  font-family: var(--Font-Family);
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-bottom: 0.2rem solid var(--third-color);
+  width: 100%;
+}
+h3 {
+  font-size: 1.4rem;
+  font-family: var(--Font-Family);
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+p {
+  font-family: var(--Font-Family);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+}
+ul {
   margin-left: -2em;
-  font-size:1.2rem;
-  font-family:"Montserrat";
-  list-style-type:none;
-  color:var(--primary-color);
+  font-size: 1.2rem;
+  font-family: var(--Font-Family);
+  list-style-type: none;
+  color: var(--primary-color);
 }
-a{
-  font-size:1.3rem;
-  font-family:"Montserrat";
-  color:var(--primary-color);
+a {
+  font-size: 1.3rem;
+  font-family: var(--Font-Family);
+  color: var(--primary-color);
 }
-button{
-  font-family:"Montserrat";
-  font-size:1rem;
-  padding:0.3rem;
-  border-style:5px solid #ffffff;
+button {
+  font-family: var(--Font-Family);
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-style: 5px solid #ffffff;
   background-color: var(--primary-color);
-  }
+}
 
-button a{
-  text-decoration:none;
-  color:white;
-  }
+button a {
+  text-decoration: none;
+  color: white;
+}
 /*--------------// ICON FONT //--------------*/
-i{
+i {
   margin-right: 0.5rem;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 /*--------------// Positionnement //--------------*/
-body{
+body {
   width: 980px;
   margin: auto;
-  display:grid;
-  grid-template-columns:40% 60%;
+  display: grid;
+  grid-template-columns: 40% 60%;
   grid-template-areas:
-  "header photo"
-  "aside main"
-  "aside main"
-  " footer footer"
-  ;
-  grid-column-gap:50px;
-  grid-row-gap:15px;
+    "header title"
+    "situation situation"
+    "aside main"
+    "aside main"
+    "footer footer";
+  grid-column-gap: 50px;
+  grid-row-gap: 15px;
 }
-header{grid-area:header;}
-main{grid-area:main;}
-aside{grid-area:aside;}
-img{grid-area:photo;}
-#situation{grid-area:situation;}
-footer{grid-area:footer;}
+header {
+  grid-area: header;
+}
+#title {
+  grid-area: title;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+#situation {
+  grid-area: situation;
+}
+footer {
+  grid-area: footer;
+}
 
 /*--------------// HEADER //--------------*/
-header{
-  margin-bottom:5em;
+
+header > p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--secondary-color);
 }
-header>p{
-  font-size:1.6rem;
-  font-weight:600;
-  color:var(--secondary-color);
+img {
+  position: relative;
+  top: 5rem;
+  left: 4rem;
+  border-radius: 50%;
 }
-img{
-    position: relative;
-    top: 5rem;
-    left: 4rem;
-    border-radius: 50%;
+/* Title */
+
+#title h2{
+  border-bottom: none;
+  font-size: 2.6em;
+  font-weight: normal;
 }
 /*--------------// MAIN //--------------*/
-.skills_develop{
-  margin-left:15px;
+.skills_develop {
+  margin-left: 15px;
 }
-ul .skills_develop{
-  font-size:0.8em;
+ul .skills_develop {
+  font-size: 0.8em;
 }
 /*--------------// ASIDE //--------------*/
 /*--------// situation //---------*/
-#situation p{
-  color:var(--primary-color);
+#situation p {
+  font-size: 1.3em;
+  line-height: 32px;
+  color: var(--primary-color);
 }
-#situation p span{
-  font-weight:600;
-  color:var(--secondary-color);
+#situation p span {
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 /*--------// compétences //---------*/
-#code  ul li {
+#code ul li {
   font-size: 1em;
   list-style-type: disc;
-  color:var(--primary-color);
+  color: var(--primary-color);
   margin-left: 1em;
+}
+
+#code h4 {
+  color: var(--secondary-color);
+}
+#code h4::first-letter{
+  text-transform: uppercase;
 }
 /*--------// langue //---------*/
 #langue {
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
-.bar-container{
-  background-color:#F2E7B3;
-  height:1.2rem;
-  width:20rem;
-  z-index:1;
-  overflow:hidden;
+.bar-container {
+  background-color: #f2e7b3;
+  height: 1.2rem;
+  width: 20rem;
+  z-index: 1;
+  overflow: hidden;
 }
-.bar-level-ang{
-  background-color:var(--secondary-color);
-  height:1.2rem;
-  width:70%;
-  z-index:2;
-  overflow:hidden;
-  -webkit-animation:ang 6s ease-out;
-  animation:6sec;
+.bar-level-ang {
+  background-color: var(--secondary-color);
+  height: 1.2rem;
+  width: 70%;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-animation: ang 6s ease-out;
+  animation: 6sec;
   animation-name: ang;
 }
 @keyframes ang {
-  0%  { width:0%;}
-  100%{ width:70%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
 }
-.bar-level-port{
-  background-color:var(--secondary-color);
-  height:1.2rem;
-  width:85%;
-  z-index:2;
-  overflow:hidden;
-  -webkit-animation:port 6s ease-out;
-  animation:6sec;
+.bar-level-port {
+  background-color: var(--secondary-color);
+  height: 1.2rem;
+  width: 85%;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-animation: port 6s ease-out;
+  animation: 6sec;
 }
-@keyframes port{
-  0%  { width:0px;}
-  100%{ width:85%;}
+@keyframes port {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 85%;
+  }
 }
 /*--------------// FOOTER //--------------*/
 footer {
   display: flex;
   justify-content: center;
-  align-items:baseline;
-  background-color:var(--primary-color);
+  align-items: baseline;
+  background-color: var(--primary-color);
   height: 7vh;
- 
-  padding:0.5rem;
+
+  padding: 0.5rem;
 }
-footer a{
+footer a {
   border: 4px solid white;
   color: white;
-  text-decoration:none;
-  padding:15px;
+  text-decoration: none;
+  padding: 15px;
 }
