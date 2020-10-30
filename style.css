@@ -9,7 +9,10 @@
   --third-color: #939393;
 }
 :root {
-  --Font-Family: "Roboto";
+  --color-content: #3d3d3d;
+}
+:root {
+  --Font-Family: "Montserrat";
 }
 /*--------------// CLASS //-------------*/
 .skill:hover {
@@ -42,14 +45,13 @@ p {
   font-family: var(--Font-Family);
   font-weight: 400;
   line-height: 1.5rem;
-  color: var(--primary-color);
+  color: var(--content-color);
 }
 ul {
   margin-left: -2em;
   font-size: 1.2rem;
   font-family: var(--Font-Family);
   list-style-type: none;
-  color: var(--primary-color);
 }
 a {
   font-size: 1.3rem;
@@ -109,11 +111,7 @@ footer {
 
 /*--------------// HEADER //--------------*/
 
-header > p {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-}
+
 img {
   position: relative;
   top: 5rem;
@@ -128,18 +126,30 @@ img {
   font-weight: normal;
 }
 /*--------------// MAIN //--------------*/
+main p {
+  font-size: 1.2em;
+  color: var(--color-content);
+}
+
 .skills_develop {
+  color: var(--color-content);
   margin-left: 15px;
 }
 ul .skills_develop {
-  font-size: 0.8em;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+
+}
+
+#projects ul li{
+  color:red;
 }
 /*--------------// ASIDE //--------------*/
 /*--------// situation //---------*/
 #situation p {
   font-size: 1.3em;
   line-height: 32px;
-  color: var(--primary-color);
+  color: var(--color-content);
 }
 #situation p span {
   font-weight: 600;
@@ -149,11 +159,12 @@ ul .skills_develop {
 #code ul li {
   font-size: 1em;
   list-style-type: disc;
-  color: var(--primary-color);
+  color: var(--color-content);
   margin-left: 1em;
 }
 
 #code h4 {
+  font-weight: 600;
   color: var(--secondary-color);
 }
 #code h4::first-letter{
