@@ -1,15 +1,9 @@
 /*--------------// COLOR  //-------------*/
 :root {
-  --primary-color: #22313f;
+  --primary-color: #333333;
 }
 :root {
-  --secondary-color: #8c6930;
-}
-:root {
-  --third-color: #939393;
-}
-:root {
-  --color-content: #3d3d3d;
+  --color-content: #4a5464;
 }
 :root {
   --Font-Family: "Montserrat";
@@ -31,15 +25,17 @@ h1 {
 }
 h2 {
   font-size: 1.8rem;
-  font-weight: 500;
-  border-bottom: 0.2rem solid var(--third-color);
+  font-weight: 700;
   width: 100%;
 }
 h3 {
   font-size: 1.4rem;
   font-family: var(--Font-Family);
-  font-weight: 500;
-  color: var(--secondary-color);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+h3::first-letter {
+  text-transform: uppercase;
 }
 p {
   font-family: var(--Font-Family);
@@ -73,7 +69,7 @@ button a {
 /*--------------// ICON FONT //--------------*/
 i {
   margin-right: 0.5rem;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 /*--------------// Positionnement //--------------*/
 body {
@@ -122,7 +118,7 @@ img {
 
 #title h2{
   border-bottom: none;
-  font-size: 2.6em;
+  font-size: 2.5em;
   font-weight: normal;
 }
 /*--------------// MAIN //--------------*/
@@ -165,7 +161,7 @@ ul .skills_develop {
 
 #code h4 {
   font-weight: 600;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 #code h4::first-letter{
   text-transform: uppercase;
