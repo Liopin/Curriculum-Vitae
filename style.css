@@ -1,3 +1,9 @@
+@import 'header.css';
+@import 'situation.css';
+@import 'main.css'; 
+@import 'aside.css';
+@import 'footer.css';
+
 /*--------------// COLOR  //-------------*/
 :root {
   --primary-color: #333333;
@@ -8,10 +14,7 @@
 :root {
   --Font-Family: "Montserrat";
 }
-/*--------------// CLASS //-------------*/
-.skill:hover {
-  transform: translateY(-5px);
-}
+
 /*--------------// BALISE //--------------*/
 h1,
 h2 {
@@ -105,126 +108,4 @@ footer {
   grid-area: footer;
 }
 
-/*--------------// HEADER //--------------*/
 
-
-img {
-  position: relative;
-  top: 5rem;
-  left: 4rem;
-  border-radius: 50%;
-}
-/* Title */
-
-#title h2{
-  border-bottom: none;
-  font-size: 2.5em;
-  font-weight: normal;
-}
-/*--------------// MAIN //--------------*/
-main p {
-  font-size: 1.2em;
-  color: var(--color-content);
-}
-
-.skills_develop {
-  color: var(--color-content);
-  margin-left: 15px;
-}
-ul .skills_develop {
-  margin-bottom: 0.6em;
-  font-size: 1em;
-
-}
-
-#projects ul li{
-  color:red;
-}
-/*--------------// ASIDE //--------------*/
-/*--------// situation //---------*/
-#situation p {
-  font-size: 1.3em;
-  line-height: 32px;
-  color: var(--color-content);
-}
-#situation p span {
-  font-weight: 600;
-  color: var(--secondary-color);
-}
-/*--------// compétences //---------*/
-#code ul li {
-  font-size: 1em;
-  list-style-type: disc;
-  color: var(--color-content);
-  margin-left: 1em;
-}
-
-#code h4 {
-  font-weight: 600;
-  color: var(--primary-color);
-}
-#code h4::first-letter{
-  text-transform: uppercase;
-}
-/*--------// langue //---------*/
-#langue {
-  color: var(--primary-color);
-}
-.bar-container {
-  background-color: #f2e7b3;
-  height: 1.2rem;
-  width: 20rem;
-  z-index: 1;
-  overflow: hidden;
-}
-.bar-level-ang {
-  background-color: var(--secondary-color);
-  height: 1.2rem;
-  width: 70%;
-  z-index: 2;
-  overflow: hidden;
-  -webkit-animation: ang 6s ease-out;
-  animation: 6sec;
-  animation-name: ang;
-}
-@keyframes ang {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.bar-level-port {
-  background-color: var(--secondary-color);
-  height: 1.2rem;
-  width: 85%;
-  z-index: 2;
-  overflow: hidden;
-  -webkit-animation: port 6s ease-out;
-  animation: 6sec;
-}
-@keyframes port {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 85%;
-  }
-}
-/*--------------// FOOTER //--------------*/
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  background-color: var(--primary-color);
-  height: 7vh;
-
-  padding: 0.5rem;
-}
-footer a {
-  border: 4px solid white;
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-}

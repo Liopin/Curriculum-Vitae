@@ -1,0 +1,17 @@
+main p {
+  font-size: 1.2em;
+  color: var(--color-content);
+}
+
+.skills_develop {
+  color: var(--color-content);
+  margin-left: 15px;
+}
+ul .skills_develop {
+  margin-bottom: 0.6em;
+  font-size: 1em;
+}
+
+#lien ul li {
+    margin-bottom: 5px;
+}
