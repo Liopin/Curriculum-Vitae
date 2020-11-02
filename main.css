@@ -4,9 +4,19 @@ main p {
 }
 
 /* Formation */
- #formation h3{
-  margin-bottom: 0px;
- }
+#formation h3 {
+  margin-bottom: 5px;
+}
+
+/* Expérience */
+
+.workplace {
+  margin-bottom: 5px;
+}
+
+.date {
+  margin-top: 0px;
+}
 
 /* Projets*/
 /*
@@ -22,8 +32,6 @@ ul .skills_develop {
     margin-bottom: 5px;
 }
 */
-
-
 
 /* Certification */
 

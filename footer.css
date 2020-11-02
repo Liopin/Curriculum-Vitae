@@ -2,13 +2,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  background-color: var(--primary-color);
   height: 7vh;
   padding: 0.5rem;
 }
 footer a {
-  border: 4px solid white;
-  color: white;
+  border-bottom: 4px solid var(--primary-color  );
+  color: var(--primary-color);
   text-decoration: none;
-  padding: 15px;
+  padding: 5px;
 }
