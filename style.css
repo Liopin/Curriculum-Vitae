@@ -108,4 +108,7 @@ footer {
   grid-area: footer;
 }
 
+section {
+  margin-bottom: 5vh;
+}
 
